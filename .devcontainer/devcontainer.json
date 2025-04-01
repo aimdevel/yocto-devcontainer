@@ -9,7 +9,8 @@
             },
             "extensions": [
                 "yocto-project.yocto-bitbake",
-                "ms-python.python"
+                "ms-python.python",
+                "mads-hartmann.bash-ide-vscode"
             ]
         }
     },
