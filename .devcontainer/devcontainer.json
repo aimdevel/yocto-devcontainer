@@ -1,0 +1,21 @@
+{
+    "name": "My Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "yocto-project.yocto-bitbake",
+                "ms-python.python"
+            ]
+        }
+    },
+    "mounts": [
+      "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "postCreateCommand": "echo 'Container setup complete'",
+    "remoteUser": "user"
+  }
