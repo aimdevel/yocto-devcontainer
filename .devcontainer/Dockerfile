@@ -41,7 +41,7 @@ RUN apt update && \
 RUN locale-gen en_US.UTF-8 && \
     update-locale LANG=en_US.UTF-8
 
-WORKDIR /home/user
+WORKDIR /workspace
 
 USER user
 
@@ -49,6 +49,6 @@ RUN echo "export LANG=en_US.UTF-8" >> ~/.bashrc && \
     echo "export LC_ALL=en_US.UTF-8" >> ~/.bashrc
 
 # try poky build for test
-RUN git clone https://github.com/yoctoproject/poky.git -b scarthgap
+#RUN git clone https://github.com/yoctoproject/poky.git -b scarthgap
 
-CMD ["/bin/bash"]
+CMD ["sleep", "infinity"]

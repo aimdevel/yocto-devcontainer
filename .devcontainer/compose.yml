@@ -1,0 +1,5 @@
+services:
+  buildenv:
+    build: .
+    mem_limit: 16g
+    cpus: 8

@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/workspace/poky/bitbake/lib",
+        "${workspaceFolder}/workspace/poky/meta/lib"
+    ],
+    "files.associations": {
+        "*.conf": "bitbake",
+        "*.inc": "bitbake"
+    },
+    "files.watcherExclude": {
+        "**build**": true
+    }
+}
